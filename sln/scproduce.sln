@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScProduce", "ScProduce\ScProduce.vcxproj", "{28489E4B-5751-41FF-A9A6-7D1EEE94C6B4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scproduce", "..\src\scproduce\scproduce.vcxproj", "{28489E4B-5751-41FF-A9A6-7D1EEE94C6B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

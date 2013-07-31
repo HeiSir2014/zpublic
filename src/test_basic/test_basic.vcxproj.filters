@@ -84,6 +84,21 @@
     <Filter Include="zpublic\design">
       <UniqueIdentifier>{f36775e9-4a02-4117-8848-ac3658e58144}</UniqueIdentifier>
     </Filter>
+    <Filter Include="zpublic\win\process">
+      <UniqueIdentifier>{a6962e94-3c7f-4b67-b64c-e5fdafe1a453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zpublic\win\process\progress_manager">
+      <UniqueIdentifier>{d5621e20-a326-43a1-8131-d46e6ec72b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zpublic\win\process\progress_manager\scan">
+      <UniqueIdentifier>{355abb6f-32aa-4b6a-830c-de6c55649a01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zpublic\win\process\progress_manager\opreator">
+      <UniqueIdentifier>{59260bb6-6581-483e-a633-986a7b9a1b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zpublic\win\process\progress_manager\info">
+      <UniqueIdentifier>{c7086110-7478-4bdb-a0ed-f0a7672e1235}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\public\algorithm\algorithm.hpp">
@@ -330,6 +345,54 @@
     <ClInclude Include="..\..\public\design\design_def.h">
       <Filter>zpublic\design</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\progress_manger.h">
+      <Filter>zpublic\win\process\progress_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\progress_manger_def.h">
+      <Filter>zpublic\win\process\progress_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\iscan.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\iscan_module.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\iscan_process.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\iscan_thread.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\windows_scan.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\windows_scan_module.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\windows_scan_process.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\scan\windows_scan_thread.h">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\opreator\iopreator.h">
+      <Filter>zpublic\win\process\progress_manager\opreator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\opreator\windows_opreator_process.h">
+      <Filter>zpublic\win\process\progress_manager\opreator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\opreator\windows_opreator_thread.h">
+      <Filter>zpublic\win\process\progress_manager\opreator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\info\module_info.h">
+      <Filter>zpublic\win\process\progress_manager\info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\info\process_info.h">
+      <Filter>zpublic\win\process\progress_manager\info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\win\info\process\progress_manager\info\thread_info.h">
+      <Filter>zpublic\win\process\progress_manager\info</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\3rdparty\modp_b64\modp_b64.cc">
@@ -380,6 +443,36 @@
     </ClCompile>
     <ClCompile Include="..\..\public\design\strategy.cpp">
       <Filter>zpublic\design</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\progress_manger.cpp">
+      <Filter>zpublic\win\process\progress_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\scan\windows_scan.cpp">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\scan\windows_scan_module.cpp">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\scan\windows_scan_process.cpp">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\scan\windows_scan_thread.cpp">
+      <Filter>zpublic\win\process\progress_manager\scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\opreator\windows_opreator_process.cpp">
+      <Filter>zpublic\win\process\progress_manager\opreator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\opreator\windows_opreator_thread.cpp">
+      <Filter>zpublic\win\process\progress_manager\opreator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\info\module_info.cpp">
+      <Filter>zpublic\win\process\progress_manager\info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\info\process_info.cpp">
+      <Filter>zpublic\win\process\progress_manager\info</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\win\info\process\progress_manager\info\thread_info.cpp">
+      <Filter>zpublic\win\process\progress_manager\info</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
