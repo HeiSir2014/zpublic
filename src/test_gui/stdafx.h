@@ -26,6 +26,9 @@
 ///> windows¿â
 #include <windows.h>
 
+///> gdi
+#include <wingdi.h>
+
 
 ///> zpublic£¡
 //#include "zpublic.hpp"
@@ -122,3 +125,5 @@
  */
 //#include "atltheme.h"
 //////////////////////////////////////////////////////////////////////////
+
+extern CAppModule g_module;

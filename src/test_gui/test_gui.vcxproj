@@ -51,7 +51,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./../../public;./../../3rdparty;./../../3rdparty/wtl/Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./../../public;./../../3rdparty;./../../3rdparty/wtl/Include;./../../zlui/</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -67,7 +67,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./../../public;./../../3rdparty</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./../../public;./../../3rdparty;./../../3rdparty/wtl/Include;./../../zlui/</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -95,6 +95,9 @@
     <ClInclude Include="..\..\3rdparty\wtl\Include\atlsplit.h" />
     <ClInclude Include="..\..\3rdparty\wtl\Include\atluser.h" />
     <ClInclude Include="..\..\3rdparty\wtl\Include\atlwinx.h" />
+    <ClInclude Include="..\..\zlui\res\zl_res.h" />
+    <ClInclude Include="..\..\zlui\res\zl_res_font.h" />
+    <ClInclude Include="..\..\zlui\test\test_zlui.h" />
     <ClInclude Include="base\zui_button.h" />
     <ClInclude Include="dlg1.h" />
     <ClInclude Include="dlg2.h" />
@@ -104,20 +107,31 @@
     <ClInclude Include="frame1.h" />
     <ClInclude Include="frame2.h" />
     <ClInclude Include="frame2_view.h" />
+    <ClInclude Include="frame3.h" />
+    <ClInclude Include="frame3_subview.h" />
+    <ClInclude Include="frame3_view.h" />
+    <ClInclude Include="gdi1.h" />
+    <ClInclude Include="gdi2.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="test_basic.h" />
+    <ClInclude Include="test_gdi.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\zlui\test\test_zlui.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="test_basic.cpp" />
+    <ClCompile Include="test_gdi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="test_gui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\1.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
