@@ -10,6 +10,7 @@ public:
     BEGIN_MSG_MAP(CGdi9Dlg)
         MSG_WM_INITDIALOG(OnInitDialog)
         MSG_WM_PAINT(OnPaint)
+        MSG_WM_LBUTTONDOWN(OnLButtonDown)
         MESSAGE_HANDLER(WM_DO_ANIMATE, OnAnimate)
         COMMAND_ID_HANDLER(IDOK, OnOk)
     END_MSG_MAP()
@@ -28,7 +29,7 @@ private:
     BOOL OnInitDialog(CWindow wnd, LPARAM)
     {
         HBITMAP hBitmap = (HBITMAP)LoadImage(
-            g_module.m_hInst,
+            _Module.m_hInst,
             MAKEINTRESOURCE(IDB_BITMAP1),
             IMAGE_BITMAP,
             0,
@@ -46,6 +47,11 @@ private:
         MoveWindow(0, 0, m_bm.bmWidth, m_bm.bmHeight);
         CenterWindow();
         return TRUE;
+    }
+
+    void OnLButtonDown(UINT nFlags, CPoint point)
+    {
+        PostMessage(WM_DO_ANIMATE);
     }
 
     LRESULT OnAnimate(UINT, WPARAM, LPARAM, BOOL& bHandled)
