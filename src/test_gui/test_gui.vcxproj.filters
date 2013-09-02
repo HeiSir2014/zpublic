@@ -171,8 +171,14 @@
     <ClInclude Include="gdi8.h">
       <Filter>src\gdi</Filter>
     </ClInclude>
+    <ClInclude Include="gdi9.h">
+      <Filter>src\gdi</Filter>
     <ClInclude Include="base\zui_button.h">
       <Filter>src\base</Filter>
+    </ClInclude>
+    <ClInclude Include="animate.h">
+      <Filter>src\gdi</Filter>
+    </ClInclude>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
